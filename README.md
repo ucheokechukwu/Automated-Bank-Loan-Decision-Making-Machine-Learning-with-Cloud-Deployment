@@ -29,6 +29,8 @@ Created visualizations and ran statistical testing to confirm previous hypothesi
 
 ![plot](images/loan_status_vs_property_area.png)
 
+![plot](images/loan_status_vs_selfemployment.png)
+
 ### Cleaning
 Replaced null values with 2 different strategies:
 
