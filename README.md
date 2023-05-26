@@ -9,6 +9,8 @@ To automate the loan eligibility process based on customer details.
 Loans are more likely to be granted to:
 1. High-income applicants.
 2. Applicants with a credit history.
+3. Applicants with Higher Education 
+4. Applicants in urban areas
 
 Testing methods: Visualizations and use of Statsmodel Hypothesis Testing
 
@@ -18,9 +20,12 @@ Testing methods: Visualizations and use of Statsmodel Hypothesis Testing
 ### EDA
 Created visualizations and ran statistical testing to confirm previous hypothesis, observe patterns, correlations and potential outliers.
 
-![plot](images/loanstatus_vs_credithistory.png)
 
 ![plot](images/loanstatus_vs_income.png)
+
+![plot](images/loanstatus_vs_credithistory.png)
+
+![plot](images/loan_status_vs_education.png)
 
 ![plot](images/loan_status_vs_property_area.png)
 
