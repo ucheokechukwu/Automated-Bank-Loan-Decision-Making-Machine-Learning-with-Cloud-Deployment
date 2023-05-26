@@ -17,6 +17,7 @@ Testing methods: Visualizations and use of Statsmodel Hypothesis Testing
 ## Process
 ### EDA
 Created visualizations and ran statistical testing to confirm previous hypothesis, observe patterns, correlations and potential outliers.
+
 ![plot](images/loanstatus_vs_credithistory.png)
 
 ![plot](images/loanstatus_vs_income.png)
@@ -25,8 +26,9 @@ Created visualizations and ran statistical testing to confirm previous hypothesi
 
 ### Cleaning
 Checked for duplicate values.
-Replaced null values - 
+Replaced null values:
     Used default values to replace columns for 'Married', 'Dependents', 'Credit_History' (Not, 0 and 0) respectively.
+    
     Based on observations from EDA, replaced 'Self_Employment' with two values derived from aggregate grouping ApplicantIncome on Self_Employment.
 
 ### Feature Engineering:
@@ -71,7 +73,8 @@ Achieved with hyperparameters:
     - 'features__pca__n_components': 0 
     - 'features__select_best__k': 3
     - 'preprocessing__categorical__scaling': StandardScaler
-    - 'preprocessing__numeric__scaling': StandardScaler(), - - - - 'preprocessing__numeric_log__scaling': StandardScaler()}
+    - 'preprocessing__numeric__scaling': StandardScaler(),
+    - 'preprocessing__numeric_log__scaling': StandardScaler()}
 
 **SelectKBest top 3 features**: `['Married', 'Credit_History', 'Education']`
 
@@ -84,11 +87,12 @@ http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/probility
 
 
 
-## Challanges 
-AWS environment:
-Smaller disk space, size limit. Needed to uninstall Anaconda and reinstall Miniconda to optimize disk space.
-Older versions of packages and libraries. Needed to upgrade.
-Learning curve with the entire project, working with a lot of new strategies like Pipelining 
+## Challenges 
+**AWS environment**:
+- Smaller disk space, size limit. Needed to uninstall Anaconda and reinstall Miniconda to optimize disk space.
+- Older versions of packages and libraries. Needed to upgrade.
+- Working in several environments (Jupyter notebook, Terminal for Flask, Ubuntu AWS, Postman, Google Colab, etc)
+- Learning curve with the entire project, working with a lot of new strategies like Pipelining 
 
 ## Future Goals
 - Use XGBoost and more sophisticated classifiers.
