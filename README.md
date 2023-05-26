@@ -90,7 +90,9 @@ Achieved with hyperparameters:
 
 http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/predict
 
-http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/probility
+http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/probability
+
+![plot](images/test_run.png)
 
 
 
