@@ -77,7 +77,7 @@ Achieved with hyperparameters:
     - 'preprocessing__numeric__scaling': StandardScaler(),
     - 'preprocessing__numeric_log__scaling': StandardScaler()}
 
-**SelectKBest top 3 features**: `['Married', 'Credit_History', 'Education']`
+**SelectKBest top 3 features**: `['Credit_History', 'Education', 'Married']`
 
 **Demo**:
 
