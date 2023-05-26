@@ -25,17 +25,16 @@ Created visualizations and ran statistical testing to confirm previous hypothesi
 ![plot](images/loan_status_vs_property_area.png)
 
 ### Cleaning
-Checked for duplicate values.
-Replaced null values:
-    Used default values to replace columns for 'Married', 'Dependents', 'Credit_History' (Not, 0 and 0) respectively.
-    
-    Based on observations from EDA, replaced 'Self_Employment' with two values derived from aggregate grouping ApplicantIncome on Self_Employment.
+Replaced null values with 2 different strategies:
+
+1. Default values to replace columns for 'Married', 'Dependents', 'Credit_History' (Not, 0 and 0) respectively.
+2. Based on observations from EDA, replaced 'Self_Employment' with two values derived from aggregate grouping ApplicantIncome on Self_Employment.
 
 ### Feature Engineering:
-Identifying column types: 
-    Changed Property Area and Dependents as Ordinal Categories. Changed the datatype accordingly.
-    Changed Married, Credit_History, Education as Binary categories.
-- `Income`: Summed ApplicantIncome and Co-ApplicantIncome and created new column Income. Performed log transformation on this column to normalize distribution. Observed that outlier data was also corrected by this transformation.
+- Identifying column types: 
+    a. Changed `Property Area` and `Dependents` as Ordinal Categories. Changed the datatype accordingly.
+    b. Changed `Married`, `Credit_History`, `Education` as Binary categories.
+- `Income`: Summed `ApplicantIncome` and `Co-ApplicantIncome` and created new column Income. Performed log transformation on this column to normalize distribution. Observed that outlier data was also corrected by this transformation.
 - `LoanAmount`: Also performed log transformation on Loan Amount to normalize data.
 
 
@@ -51,6 +50,8 @@ Identifying column types:
 **Precision** - 0.73
 **Recall** - 0.79
 
+
+![plot](images/classification_report_base.png)
 ![plot](images/base_matrix.png)
 
 
@@ -64,7 +65,7 @@ Then developed a Pipeline Model with GridSearchCV. The parameters list included:
 ## Results/Demo
 
 The best test set accuracy: 0.9193548387096774
-
+![plot](images/classification_report_best.png)
 ![plot](images/best_matrix.png)
 
 Achieved with hyperparameters: 
