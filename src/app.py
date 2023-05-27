@@ -21,7 +21,8 @@ log_transform = FunctionTransformer(log_transformer)
 
 # create a class 
 class IncomeGenerator():
-    '''add the Incomes''' 
+    '''sums Applicantincome and Coapplicantincome and 
+        returns as new column Income''' 
     def __init__(self):
         pass
         
@@ -35,6 +36,11 @@ class IncomeGenerator():
 
 df_for_customimputer = pickle.load(open('df_for_customimputer', 'rb'))        
 class CustomImputer():
+    """
+    Custom class to fill in the missing values of Married, Dependents, Credit_History and Self_Employed
+    Fills in the first 3 with default values
+    Fills the last feature with values based on income brackets
+    """
     def __init__(self, df=df_for_customimputer):
         # dictionary of missing values
         self.defaults = {'Married': 'No',

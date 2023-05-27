@@ -52,10 +52,7 @@ Replaced null values with 2 different strategies:
 - `MinMaxScaler` on ordinal categories. 
 -  No dimension reduction techniques i.e. no `PCA()` or `SelectKBest()`
 -  `LogisticRegression()` classifer set to default values
--  Results
-**Accuracy** - 0.79
-**Precision** - 0.73
-**Recall** - 0.79
+-  Results:
 
 
 ![plot](images/classification_report_base.png)
@@ -65,7 +62,7 @@ Replaced null values with 2 different strategies:
 Then developed a Pipeline Model with GridSearchCV. The parameters list included:
 - different Scalers to try on the features (`QuantileTransformer` and `RobustTransformer`), 
 - dimension reduction by `PCA()` and `SelectKBest()`
-- classifiers:`RidgeClassifier()`, `BernoulliNB()`, `SVC()`, `RandomForestClassifier()`, and again, `LogisticRegression().
+- classifiers:`RidgeClassifier()`, `BernoulliNB()`, `SVC()`, `RandomForestClassifier()`, and again, `LogisticRegression()`.
 
 ![plot](images/best_grid_pipeline.png)
 
@@ -79,14 +76,14 @@ Achieved with hyperparameters:
 
     - 'classifier': RandomForestClassifier()
     - 'features__pca__n_components': 0 
-    - 'features__select_best__k': 3
+    - 'features__select_best__k': 3 ['Credit_History', 'Education', 'Married']
     - 'preprocessing__categorical__scaling': StandardScaler
     - 'preprocessing__numeric__scaling': StandardScaler(),
-    - 'preprocessing__numeric_log__scaling': StandardScaler()}
+    - 'preprocessing__numeric_log__scaling': StandardScaler()
 
-**SelectKBest top 3 features**: `['Credit_History', 'Education', 'Married']`
 
-**Demo**:
+
+### AWS Demo
 
 http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/predict
 
