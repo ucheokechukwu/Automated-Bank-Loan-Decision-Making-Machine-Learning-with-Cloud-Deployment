@@ -1,4 +1,4 @@
-# Automated-Bank-Loan-Decision-Making-Machine-Learning-with-Cloud-Deployment (Mini-project IV)
+# Automated-Bank-Loan-Decision-Making-Machine-Learning-with-Cloud-Deployment 
 
 ### [Assignment](assignment.md)
 
