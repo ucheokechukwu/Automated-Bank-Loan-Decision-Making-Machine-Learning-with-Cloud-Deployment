@@ -1,4 +1,4 @@
-# Automated Bank Loan Decision Making Machine Learning with AWS Cloud Deployment 
+# Automated Bank Loan Decision Classifier Model with AWS Cloud Deployment 
 
 **Deployed**: [Bank Loan Decision Bot](http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/)
 
