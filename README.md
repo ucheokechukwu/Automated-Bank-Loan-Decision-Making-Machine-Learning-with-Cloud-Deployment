@@ -1,6 +1,6 @@
 # Automated-Bank-Loan-Decision-Making-Machine-Learning-with-Cloud-Deployment 
 
-### [Assignment](assignment.md)
+**Status**: [Bank Loan Decision Bot](http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/)
 
 ## Project/Goals
 To automate the loan eligibility process based on customer details. 
@@ -85,11 +85,7 @@ Achieved with hyperparameters:
 
 ### AWS Demo
 
-http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/predict
-
-http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/probability
-
-![plot](images/test_run.png)
+[Bank Loan Decision Bot](http://ec2-3-145-177-87.us-east-2.compute.amazonaws.com:8000/)
 
 
 
